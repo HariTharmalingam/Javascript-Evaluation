@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercice 8</title>
+</head>
+<body>
+<h1>Bataille Navale</h1>
+<div class="ships">
+    <h4 id="porteAvion1"> Porte Avion 1 </h4>
+    <h4 id="porteAvion2"> Porte Avion 2 </h4>
+    <h4 id="croiseur"> Croiseur </h4>
+    <h4 id="contreTorpilleur"> Contre-Torpilleur </h4>
+    <h4 id="torpilleur"> Torpilleur </h4>
+</div>
+
+
+<div id="gameboard">
+
+</div>
+<style>
+    body {
+        margin: auto;
+        max-width: 950px;
+    }
+    #gameboard {
+        position:relative;
+        width:500px;
+        height:500px;
+    }
+    #gameboard div {
+        position:absolute;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        width:50px;
+        height:50px;
+    }
+    .ships{
+        display: flex;
+    }
+    .sank{
+        text-decoration: line-through;
+        color: red;
+    }
+    h4{
+        margin: 5px;
+    }
+</style>
+</body>
+<script src="index.js"></script>
+</html>
